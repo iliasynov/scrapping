@@ -1,0 +1,669 @@
+<title>Orias : Bienvenue</title>
+<script src="/assets/jquery-1.12.4.min.js?compile=false" type="text/javascript"></script>
+<script src="/assets/bootstrap-4.4.1.min.js?compile=false" type="text/javascript"></script>
+<script src="/assets/jquery.selectBox.js?compile=false" type="text/javascript"></script>
+<script src="/assets/orias.js?compile=false" type="text/javascript"></script>
+<script src="/assets/scripts.js?compile=false" type="text/javascript"></script>
+<script src="/assets/contact.js?compile=false" type="text/javascript"></script>
+<script src="/assets/recherche.js?compile=false" type="text/javascript"></script>
+<script src="/assets/ellisphere.js?compile=false" type="text/javascript"></script>
+<script src="/assets/backOffice.js?compile=false" type="text/javascript"></script>
+<script src="/assets/suppression.js?compile=false" type="text/javascript"></script>
+<script src="/assets/validationErrors.js?compile=false" type="text/javascript"></script>
+<script src="/assets/demandes.js?compile=false" type="text/javascript"></script>
+<script src="/assets/dropzone.js?compile=false" type="text/javascript"></script>
+<script src="/assets/commission.js?compile=false" type="text/javascript"></script>
+<script src="/assets/lot.js?compile=false" type="text/javascript"></script>
+<script src="/assets/InputElementDto.js?compile=false" type="text/javascript"></script>
+<script src="/assets/mnf_espace_public.js?compile=false" type="text/javascript"></script>
+<script src="/assets/naf/Naf.js?compile=false" type="text/javascript"></script>
+<script src="/assets/naf/Nafs.js?compile=false" type="text/javascript"></script>
+<script src="/assets/enregistrement.js?compile=false" type="text/javascript"></script>
+<script src="/assets/news.js?compile=false" type="text/javascript"></script>
+<link href="/assets/bootstrap-4.4.1.min.css?compile=false" rel="stylesheet"/>
+<link href="/assets/select2.min.css?compile=false" rel="stylesheet"/>
+<link href="/assets/orias.css?compile=false" rel="stylesheet"/>
+<link href="/assets/styles.css?compile=false" rel="stylesheet"/>
+<link href="/assets/admin.css?compile=false" rel="stylesheet"/>
+<link href="/assets/dropzone.css?compile=false" rel="stylesheet"/>
+<link href="/assets/commission.css?compile=false" rel="stylesheet"/>
+<link href="/assets/bootstrap-table.min.css?compile=false" rel="stylesheet"/>
+<link href="/assets/mnf_espace_public.css?compile=false" rel="stylesheet"/>
+<!-- Matomo -->
+<script>
+  var siteId = 14
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://agiravie.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', siteId]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/agiravie.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<meta content="espacePublic" name="layout"/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-70CBWDYTJ3"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-70CBWDYTJ3');
+    </script>
+</meta></head>
+<body id="homePage">
+<div class="container-main">
+<div class="global">
+<!--====== START HEADER ======-->
+<div class="top-page"></div>
+<div class="header_padding"></div>
+<header class="header">
+<div id="logo">
+<a href="/">
+<img alt="Orias" src="/assets/logo.png"/>
+</a>
+</div>
+<div class="header_wrapper">
+<nav class="mainMenu">
+<li>
+<a class="link" href="/home/juridique">Bibliothèque juridique</a>
+</li>
+</nav>
+<div class="header_wrapper--last">
+<div class="language">
+<a href="/home/changeLocale?lang=fr_FR">FR</a>
+<a href="/home/changeLocale?lang=en_US">EN</a>
+</div>
+<div class="connexion">
+<a class="btnOrias" href="/afterLogin/index">
+                        Connexion
+                    </a>
+</div>
+</div>
+</div>
+</header>
+<!--====== END HEADER ======-->
+<script crossorigin="anonymous" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+<!-- contenu de message à supprimer en fin de pb, repasser  display: none; -->
+<div class="alert alert-warning" id="alertCommonForm" role="alert" style="display: flex;">
+<p>
+<span style="font-weight: 500;">L’ORIAS est l’organisme en charge du Registre officiel des intermédiaires en Assurance, Banque et Finance, placé sous la tutelle de la Direction Générale du Trésor (Ministère de l’Economie).
+                        <br/>L’immatriculation de ces intermédiaires sur ce Registre est obligatoire. Le site internet de l’Orias permet de vérifier que l’intermédiaire est autorisé à distribuer des produits d’assurance, bancaires ou financiers.
+                    </span>
+<br/><br/>
+<span style="font-weight: 900;"><b>IMPORTANT : RENOUVELLEMENT</b></span>
+<br/>
+<span style="font-weight: 500;">Il est l'heure de se renouveler
+                        <br/>Pour faciliter vos démarches,<a href="/home/documents/ORIAS-STATIC-HOME-GUIDE"> consultez le Guide utilisateur</a>.
+                    </span>
+<br/><br/>
+</p>
+</div>
+<!--====== START HEADER ======-->
+<div class="top-page"></div>
+<div class="header_padding"></div>
+<header class="header">
+<div id="logo">
+<a href="/">
+<img alt="Orias" src="/assets/logo.png"/>
+</a>
+</div>
+<div class="header_wrapper">
+<nav class="mainMenu">
+<li>
+<a class="link" href="/home/juridique">Bibliothèque juridique</a>
+</li>
+</nav>
+<div class="header_wrapper--last">
+<div class="language">
+<a href="/home/changeLocale?lang=fr_FR">FR</a>
+<a href="/home/changeLocale?lang=en_US">EN</a>
+</div>
+<div class="connexion">
+<a class="btnOrias" href="/afterLogin/index">
+                        Connexion
+                    </a>
+</div>
+</div>
+</div>
+</header>
+<!--====== END HEADER ======-->
+<script crossorigin="anonymous" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+<!--=====²= START RESULT ======-->
+<div id="result" style="top: -82px;">
+<!--====== START SEARCH ======-->
+<div class="searchComponent">
+<div class="goBack">
+<a href="/home/resultSearch?valueSaisie=814943593" title="Retour à la recherche">
+                Retour à la recherche
+            </a>
+</div>
+<h1 class="bigTitle">
+
+            B&amp;B BROKERAGE
+        </h1>
+<h3 class="detailTitle">Détails de l’intermédiaire</h3>
+<div class="wrapperCriteres hideBorder">
+<ul class="listCritere withLabel">
+<li>
+<span class="label">Sigle, Enseigne, Nom commercial</span>
+<span>B&amp;B BROKERAGE</span>
+</li>
+<li class="iconPM btmBrd">
+<span class="label">Statut</span>
+<span>Personne morale</span>
+</li>
+<li class="inscription ok">
+<span class="label">Etat &amp; Inscriptions</span>
+<span>Inscrit</span>
+<span class="resultSearch">
+                        2
+                    </span>
+</li>
+<li class="btmBrd">
+<span class="label">N° Orias</span>
+<span>16001000</span>
+</li>
+<li>
+<span class="label">N° SIREN</span>
+<span>814 943 593</span>
+</li>
+<li>
+<span class="label">Forme juridique</span>
+<span>Société par Actions Simplifiée</span>
+</li>
+<li class="btmBrd">
+<span class="label">Code NAF</span>
+<span>7022Z<br>
+</br></span>
+</li>
+<li>
+<span class="label">RCS</span>
+<span>LYON</span>
+</li>
+<li class="btmBrd">
+<span class="label">Adresse</span>
+<span>1 RUE CLAUDE CHAPPE PARC DE CRECY 69370 SAINT DIDIER AU MONT D'OR France</span>
+</li>
+<li class="siteweb btmBrd">
+<span class="label">Site internet</span>
+<span>non renseigné</span>
+</li>
+<li class="siteweb btmBrd">
+<span class="label">Téléphone public</span>
+<span>0609324881</span>
+</li>
+<li class="siteweb btmBrd">
+<span class="label">Email public</span>
+<span>bb.brokerage@orange.fr</span>
+</li>
+</ul>
+</div>
+</div>
+<!--====== START SEARCH ======-->
+<div class="mainResult">
+<h2 class="mainTitle mgB30">Catégories d’inscription</h2>
+<div class="typeInterm">
+<div class="leftSide">
+<h3 class="title"></h3>
+<span class="case">Richard BACOT</span>
+<!--i class="zmdi zmdi-info-outline"></i-->
+<div class="infoBulle">
+                    Mandataire d'intermédiaire en opérations de banque et en services de
+                    paiement
+                </div>
+</div>
+<div class="rightSide">
+<span class="rights">Autorité en charge</span>
+<img alt="ACPR" src="/assets/medias/marque1.jpg"/>
+</div>
+</div>
+<div class="mainResult_wrapper interWrapper">
+<p class="activity" style="margin-bottom: 10px"> Activité d'intermédiation à titre accessoire</p>
+<div class="mainResult_wrapper interWrapper">
+<div class="mainResult_wrapper--lineResult noFlex">
+<div class="doubleSideResult">
+<div class="leftSideResult">
+<div class="item">
+                                        COA
+                                        <i class="zmdi zmdi-info-outline"></i>
+<div class="infoBulle">Courtier d'assurance ou de réassurance</div>
+</div>
+<div class="item withBorder">
+<span class="text-success">Inscrit</span>
+<span class="date">le 25/03/2016</span>
+</div>
+</div>
+<div class="rightSideResult">
+<div class="item">
+
+                                            Encaissement de fonds non  autorisé
+                                            <i class="zmdi zmdi-info-outline"></i>
+<div class="infoBulle">
+<p>
+                                                    Cet intermédiaire n'est pas autorisé à encaisser des fonds destinés à un assuré
+                                                    ou à une entreprise d'assurance (primes ou cotisations)
+                                                </p>
+<p>Au termes de l'article L. 512-7 du code des assurances</p>
+</div>
+</div>
+</div>
+</div>
+<div class="detailResult">
+<div class="detailResult--header">
+<h4 class="title">Association(s)</h4>
+<span class="showDetail">
+<i class="zmdi zmdi-chevron-down"></i>
+</span>
+</div>
+<div class="detailResult--content">
+<table>
+<thead>
+<tr>
+<th><span>SIREN</span></th>
+<th>Dénomination</th>
+<th>Adresse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>900 008 558</td>
+<td>ANACOFI-COURTAGE</td>
+<td>90 rue d'Amsterdam 75009 PARIS 09 France</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="detailResult">
+<div class="detailResult--header">
+<h4 class="title">Registre(s) notification(s) sortante(s)</h4>
+<span class="showDetail">
+<i class="zmdi zmdi-chevron-down"></i>
+</span>
+</div>
+<div class="detailResult--content">
+<table>
+<thead>
+<tr>
+<th>Registre</th>
+<th>Nom</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Danemark</td>
+<td>DFSA - Finanstilsynet</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Espagne</td>
+<td>DGSFP - Direccion General de Seguros y Fondos de Pensiones</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Estonie</td>
+<td>Financial Supervisory Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Finlande</td>
+<td>Finanssivalvonta</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Grèce</td>
+<td>Bank of Greece</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Autriche</td>
+<td>BMWFW - Federal Ministry of Science, Research and Economy</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Autriche</td>
+<td>FMA - Finanzmarktaufsichtsbehorde</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Allemagne</td>
+<td>DIHK - Deutscher Industrie und Hendelskammertag e.v.</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Bulgarie</td>
+<td>Financial Supervision Commission</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Belgique</td>
+<td>FSMA - Financial Services and Markets Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Chypre</td>
+<td>ICCS - Insurance Companies Control Service</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Croatie</td>
+<td>Croatian Financial Services Supervisory Agency - CFSSA</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Lettonie</td>
+<td>Financial and Capital Merket Commission</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Luxembourg</td>
+<td>Commissariat aux Assurances</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Lituanie</td>
+<td>Bank of Lithuania</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Liechtenstein</td>
+<td>FMA - Financial Market Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Malte</td>
+<td>Malta Financial Services Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Norvège</td>
+<td>Finanstilsynet</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Hongrie</td>
+<td>Magyar Nemzeti Bank</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Islande</td>
+<td>Financial Supervision Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Italie</td>
+<td>IVASS - Istituto per la vigilanza sulle assicurazioni</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Irlande</td>
+<td>Central Bank of Ireland</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Portugal</td>
+<td>Instituto de Seguros de Portugal</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Pologne</td>
+<td>Polish Financial Supervision Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Pays-Bas</td>
+<td>AFM - Autoriteit Financiele Merkten</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Suède</td>
+<td>Bolagsverket</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Slovénie</td>
+<td>Insurance Supervision Agency</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Slovaquie</td>
+<td>National Bank of Slovakia</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>République tchèque</td>
+<td>Czech National Bank</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+<tr>
+<td>Roumanie</td>
+<td>Financial Supervisory Authority</td>
+<td>
+                                Libre Prestation de Service (LPS)
+                            </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mainResult_wrapper interWrapper">
+<div class="mainResult_wrapper interWrapper">
+<div class="mainResult_wrapper--lineResult noFlex">
+<div class="doubleSideResult">
+<div class="leftSideResult">
+<div class="item">
+                                        CIF
+                                        <i class="zmdi zmdi-info-outline"></i>
+<div class="infoBulle">Conseiller en investissements financiers</div>
+</div>
+<div class="item withBorder">
+<span class="text-success">Inscrit</span>
+<span class="date">le 19/02/2016</span>
+</div>
+</div>
+<div class="rightSideResult">
+<div class="item">
+
+                                            Encaissement de fonds non  autorisé
+                                            <i class="zmdi zmdi-info-outline"></i>
+<div class="infoBulle">
+<p>
+                                                    Cet intermédiaire n'est pas autorisé à encaisser des fonds destinés à un assuré
+                                                    ou à une entreprise d'assurance (primes ou cotisations)
+                                                </p>
+<p>Au termes de l'article L. 512-7 du code des assurances</p>
+</div>
+</div>
+</div>
+</div>
+<div class="detailResult">
+<div class="detailResult--header">
+<h4 class="title">Association(s)</h4>
+<span class="showDetail">
+<i class="zmdi zmdi-chevron-down"></i>
+</span>
+</div>
+<div class="detailResult--content">
+<table>
+<thead>
+<tr>
+<th><span>SIREN</span></th>
+<th>Dénomination</th>
+<th>Adresse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>497 943 639</td>
+<td>ANACOFI-CIF - ASSOCIATION NATIONALE DES CONSEILS FINANCIERS</td>
+<td>92 rue d’Amsterdam 75009 Paris FRA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+.text_center {
+    width: 100% !important;
+    padding-left: 25px !important;
+    display: block !important;
+    position: absolute !important;
+    -ms-transform: translateY(-50%) !important;
+    -moz-transform: translateY(-50%) !important;
+    -o-transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
+    color: #044d92 !important;
+}
+</style>
+<!--====== END RESULT ======-->
+</div>
+<!--====== START FOOTER ======-->
+<footer class="footer">
+<div class="main">
+<!-- ORIAS-905 Désactivation temporaire
+        <div class="search_form">
+            <form class="formulaire">
+                <input type="text" name="search_form" placeholder="Ex : n° SIREN, n° Orias, Dénomination ...">
+                <button type="submit">Rechercher dans tout le site</button>
+            </form>
+        </div>
+        -->
+<div class="footer_head">
+<div class="footer_head--item">
+<h4 class="title">Informations pratiques</h4>
+<ul>
+<li><a class="link" href="/home/sitemap">Plan du site</a></li>
+<li>
+<div id="matomo-opt-out">
+<a class="link" href="/home/documents/ORIAS-STATIC-HOME-MENTIONS-LEGALES" title="Mentions légales">
+                            Mentions légales
+                        </a>
+<script src="https://agiravie.matomo.cloud/index.php?module=CoreAdminHome&amp;action=optOutJS&amp;divId=matomo-opt-out&amp;language=auto&amp;showIntro=1"></script>
+</div>
+</li>
+<li><a class="link" href="/home/liensUtiles">Liens utiles</a></li>
+</ul>
+</div>
+<div class="footer_head--item">
+<h4 class="title">Aide</h4>
+<ul>
+<li><a class="link" href="/home/glossaire">Glossaire</a></li>
+<li><a class="link" href="/home/juridique">Bibliothèque</a></li>
+</ul>
+</div>
+<div class="footer_head--item">
+<ul>
+<li>
+<a class="title link" href="/home/documents/ORIAS-STATIC-HOME-FAQ" title="FAQ">
+                            FAQ
+                        </a>
+<a class="title link" href="/public/enregistrement/index">
+</a>
+</li>
+<li>
+<a class="title link" href="/professionnel">
+                            Espace client
+                        </a>
+</li>
+<li>
+<a class="title link" href="/./webService/inscription">Inscription Web Service</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_bottom">
+<div class="main">
+<ul>
+<li>© 2020 ORIAS. Tous droits réservés</li>
+<li><a class="link" href="/./public/contactPublic">
+                        Contact</a>
+</li>
+<li>
+<a class="link" href="/home/documents/ORIAS-STATIC-HOME-MENTIONS-LEGALES" title="Mentions légales">
+                            Mentions légales
+                        </a>
+</li>
+</ul>
+</div>
+</div>
